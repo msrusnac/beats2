@@ -1,0 +1,81 @@
+.order-section {
+  background: #181818;
+}
+
+.section__title-order, .form__title {
+  color: white;
+}
+
+
+.form {
+  display: flex;
+}
+
+.form__title {
+  font-family: Play;
+font-size: 1rem;
+}
+.form__col {
+  flex:1;
+  margin-right: 1.25rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 1.125rem;
+  
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 1.25rem;
+  width: 6.25rem;
+  height: 3.625rem;
+margin-bottom: 1.25rem;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &-textarea {
+    height: 11.25rem;
+  }
+}
+
+.form__input {
+  width: 100%;
+  border: solid 0.1875rem transparent;
+  padding: 1.125rem 0.6875rem;
+  
+
+  &-textarea {
+    height: 11.25rem;
+    width: 100%;
+    resize: none;
+    
+  }
+
+  &:focus {
+    border-color: #E01F3D;
+    outline: none;
+  }
+}
+
+// .form__row-area{
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.form__btns {
+  margin-top: 2.5rem;
+}
+
