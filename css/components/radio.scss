@@ -18,6 +18,10 @@ margin-right: 2.3125rem;
 
   }
   }
+
+  @include phones {
+    margin-bottom: 0.625rem;
+  }
 }
 
 .radio__elem {

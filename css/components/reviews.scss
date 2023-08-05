@@ -5,11 +5,22 @@
 
 .reviews__display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .reviews__avatar {
   width: 15.875rem;
   height: 16.25rem;
+
+  @include tablets {
+    width: 8.25rem;
+    height: 8.25rem;
+  }
 }
 
 .reviews__avatar-img {

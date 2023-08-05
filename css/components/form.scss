@@ -6,9 +6,26 @@
   color: white;
 }
 
+.section__title-order {
+  font-size: 3rem;
+  @include tablets {
+    padding-top: 3.5rem;
+    margin-bottom: 14px;
+  }
+}
 
 .form {
   display: flex;
+
+  @include tablets {
+    padding: 0 18%;
+    flex-direction: column;
+    
+  }
+
+  @include phones {
+    padding: 0;
+  }
 }
 
 .form__title {
@@ -20,6 +37,10 @@ font-size: 1rem;
   margin-right: 1.25rem;
 
   &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
     margin-right: 0;
   }
 }
@@ -42,6 +63,14 @@ margin-bottom: 1.25rem;
 
   &-textarea {
     height: 11.25rem;
+
+    @include tablets {
+      height: 6.25rem;
+    }
+  }
+
+  @include tablets {
+    margin-bottom: 3px;
   }
 }
 
@@ -49,18 +78,26 @@ margin-bottom: 1.25rem;
   width: 100%;
   border: solid 0.1875rem transparent;
   padding: 1.125rem 0.6875rem;
-  
+  border-radius: 5px;
 
   &-textarea {
     height: 11.25rem;
     width: 100%;
     resize: none;
+
+    @include tablets {
+      height: 5.4375rem;
+    }
     
   }
 
   &:focus {
     border-color: #E01F3D;
     outline: none;
+  }
+
+  @include tablets {
+    padding: 0.4375rem 0.0625rem;
   }
 }
 
@@ -73,9 +110,26 @@ margin-bottom: 1.25rem;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1.25rem;
+
+  @include phones {
+    justify-content: center;
+  }
 }
 
 .form__btns {
   margin-top: 2.5rem;
+
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
 }
 
+.btn--trasparent {
+  color: white;
+
+
+&:hover {
+  color: $darkRed;
+}
+}
