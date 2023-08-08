@@ -10,7 +10,13 @@
   font-size: 3rem;
   @include tablets {
     padding-top: 3.5rem;
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
+  }
+
+  @include phones {
+    font-size: 2.0625rem;
+    margin-bottom: 2.125rem;
+    padding-top: 5.5rem;
   }
 }
 
@@ -47,8 +53,15 @@ font-size: 1rem;
 
 .form__row {
   display: flex;
-  margin-bottom: 1.125rem;
+  margin-bottom: 18px;
   
+  @include phones {
+    margin-bottom: 22px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
 }
 
 .form__block {

@@ -1,6 +1,8 @@
 .reviews__display {
   background:#F8FAF9;
   padding:1.25rem 2.8125rem 2.125rem;
+
+  
 }
 
 .reviews__display-inner {
@@ -21,6 +23,11 @@
     width: 8.25rem;
     height: 8.25rem;
   }
+
+  @include phones {
+    margin-bottom: 20px;
+  } 
+
 }
 
 .reviews__avatar-img {

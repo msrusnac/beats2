@@ -9,7 +9,7 @@
   position: relative;
 
   @include tablets {
-    height: 135vh;
+    min-height: 46.625rem;
   }
 
   &:after {
@@ -71,8 +71,14 @@
   text-transform: uppercase;
 
   @include tablets { 
+    padding: 0 7%;
     margin-bottom: 0;
   }
+
+  @include phones {
+    font-size: 2.0625rem;
+  }
+  
 }
 
 .hero__icons-section{
@@ -90,11 +96,12 @@
 
   @include tablets { 
     padding: 0 23%;
-    margin-bottom: 19px
+    margin-bottom: 1.1875rem
   }
 
   @include phones {
-    padding: 0 16%;
+    padding: 0 13%;
+    
   }
 }
 

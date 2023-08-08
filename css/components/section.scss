@@ -1,9 +1,14 @@
 .section  {
   height: 100vh;
   min-height: 43.125rem;
+//  min-height: 49.125rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include phones {
+    min-height: 44.125rem;
+  }
 }
 
 .section__title {
@@ -13,5 +18,9 @@
   text-align: center;
   text-transform: uppercase;
   color: #000;
+
+  @include phones {
+    font-size: 2.0625rem;
+  }
 }
 
