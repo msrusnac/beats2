@@ -112,7 +112,7 @@ img {
   position: absolute;
   bottom: -1.8125rem;
   right: 2.625rem;
-  content: url(../../img/rect-hero.png);
+  content: url(../img/rect-hero.png);
 }
 
 .hero__container {
