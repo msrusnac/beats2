@@ -127,7 +127,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  background: url(../../img/elipse5.png) right 7% center/50% auto no-repeat;
+  background: url(../img/elipse5.png) right 7% center/50% auto no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero__container {
