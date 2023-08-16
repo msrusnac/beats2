@@ -37,7 +37,7 @@
               </span>
               <span class="phone-number__text">8 800 903 90 90</span>
             </a>
-            <a href="" class="hamburger">
+            <a href="#" class="hamburger">
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
@@ -157,11 +157,13 @@
        <section class="section products-section">
         <div class="container">
           <div class="products-slider">
-            <div class="products-slider_arrows">
-              <a href="#" class="product-slider__arow product-slider__arow--prev"></a>
-              <a href="#" class="product-slider__arow product-slider__arow--next"></a>
-            </div>
-            <ul class="products">
+            <!-- <div class="products-slider_arrows"> -->
+              <a href="#" class="product-slider__arow product-slider__arow--prev" id="left"><svg class="left__arrow arrow" alt="left arrow">
+                <use xlink:href="./sprite.svg#left"></use>
+              </svg></a>
+              
+            <!-- </div> -->
+            <ul class="products" id="items">
               <li class="products_item product">
                 <div class="product_container">
                   <div class="product__col product__col-first">
@@ -177,6 +179,45 @@
                       <svg class="gear__image" alt="gear icon">
                         <use xlink:href="./sprite.svg#gear"></use>
                       </svg>
+                    </div>
+                    <div class="dropdown__menu">
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                          <div class="item__wrapper-image"><svg class="item__image" alt="icon">
+                            <use xlink:href="./sprite.svg#bluetooth"></use>
+                          </svg></div>
+                          <div class="item__desc">Bluetooth</div>
+                          <div class="item__numbers">4.0</div>
+                        </li>
+                        <li class="dropdown__item">
+                          <div class="item__wrapper-image"><svg class="item__image" alt="icon">
+                            <use xlink:href="./sprite.svg#road"></use>
+                          </svg></div>
+                          <div class="item__desc">Дальность</div>
+                          <div class="item__numbers">12 м</div>
+                        </li>
+                        <li class="dropdown__item">
+                          <div class="item__wrapper-image"><svg class="item__image" alt="icon">
+                            <use xlink:href="./sprite.svg#charger"></use>
+                          </svg></div>
+                          <div class="item__desc">Зарядка</div>
+                          <div class="item__numbers">3 ч</div>
+                        </li>
+                        <li class="dropdown__item">
+                          <div class="item__wrapper-image"><svg class="item__image" alt="icon">
+                            <use xlink:href="./sprite.svg#kg"></use>
+                          </svg></div>
+                          <div class="item__desc">Вес</div>
+                          <div class="item__numbers">215 гр</div>
+                        </li>
+                        <li class="dropdown__item">
+                          <div class="item__wrapper-image"><svg class="item__image" alt="icon">
+                            <use xlink:href="./sprite.svg#patent"></use>
+                          </svg></div>
+                          <div class="item__desc">Гарантия</div>
+                          <div class="item__numbers">1 год</div>
+                        </li>
+                      </ul>
                     </div>
                     <div class="product__title">beats solo 3. цвет «атласное серебро»</div>
                     <div class="product__text">
@@ -206,6 +247,9 @@
                 </div>
               </li> 
             </ul>
+            <a href="#" class="product-slider__arow product-slider__arow--next" id="right"><svg class="right__arrow arrow" alt="right arrow">
+              <use xlink:href="./sprite.svg#right"></use>
+            </svg></a>
           </div>
         </div>
 
@@ -343,5 +387,37 @@
 
     </ul>
   </nav>
+  <nav class="menu--vertical">
+    <div class="close__icon-wrapper">
+      <svg alt="close icon" class="close__img">
+        <use xlink:href="./sprite.svg#close"></use>
+      </svg>
+    </div>
+    <ul class="men__list">
+      <li class="menu__items">
+        <a href="#" class="menu__links">О нас</a>
+      </li>
+      <li class="menu__items">
+        <a href="#" class="menu__links">Наушники</a>
+      </li>
+      <li class="menu__items">
+        <a href="#" class="menu__links">Команда</a>
+      </li>
+      <li class="menu__items">
+        <a href="#" class="menu__links">Цены</a>
+      </li>
+      <li class="menu__items">
+        <a href="#" class="menu__links">Отзывы</a>
+      </li>
+      <li class="menu__items">
+        <a href="#" class="menu__links">Как мы работаем</a>
+      </li>
+      <li class="menu__items">
+        <a href="#" class="menu__links">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+  <script src="./slider.js"></script>
+  <script src="./menu.js"></script>
 </body>
 </html>

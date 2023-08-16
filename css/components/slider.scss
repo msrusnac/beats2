@@ -3,19 +3,61 @@
   height: 100vh;
   min-height: 40.625rem;
   position: relative;
+
   @include tablets {
-    min-height: 46.625rem;
+    min-height: 56.625rem;
   }
+}
+
+.products-slider {
+  display: flex;
+  align-items: center;
+
+  @include tablets {
+    align-items: start;
+  }
+}
+
+
+
+.product-slider__arow {
+  @include tablets {
+    padding-top: 11.3125rem;
+  }
+}
+
+.arrow {
+  
+  width: 1.5rem;
+  height: 2.5rem;
+  margin-right: 1.75rem;
+
+ 
+
+ 
 }
 
 .product_container {
   display: flex;
+
+  @include tablets {
+
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
  
 }
 
 .product__image-wrapper {
-  width: 452px;
-  height: 452px;
+  width: 22.25rem;
+  height: 22.25rem;
+
+  @include tablets {
+    width: 19.125rem;
+    height: 19.125rem;
+  }
 }
 
 .products__icon {
@@ -25,23 +67,37 @@
 
 .product__col-second {
   flex: 1;
-  margin-left: 59px;
+  margin-left: 3.6875rem;
+
+  @include tablets {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 2.5625rem;
+  }
+
+  @include phones {
+    margin-top: 1.5rem;
+  }
 }
 
 .gear__icon {
     display: inline-block;
-    width: 91px;
-    height: 91px;
+    width: 5.6875rem;
+    height: 5.6875rem;
     position: relative;
     background: #9A9A9A;
     border-radius: 6%;
     overflow: hidden;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
+
+    @include tablets {
+      display: none;
+    }
 }
 
 .gear__image {
-    width: 42px;
-    height: 42px;
+    width: 2.625rem;
+    height: 2.625rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,52 +105,88 @@
 }
 
 .product__image {
-  padding-top: 43px;
+  padding-top: 2.6875rem;
 }
 
 .product__title {
 font-family: Play;
 color: #292929;
 line-height: normal;
-font-size: 36px;
+font-size: 2.25rem;
 font-weight: 700;
 text-transform: uppercase;
-margin-bottom: 24px;
+margin-bottom: 1.5rem;
+
+@include tablets {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+@include phones {
+  padding: 0 6%;
+}
 }
 
 .product__text {
   font-family: Play;
-  font-size: 16px;
-  margin-bottom: 24px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
   padding-right: 12%;
   line-height: normal;
+
+  @include tablets {
+    padding: 0 6%;
+    
+    
+  }
+
+  @include phones {
+    padding: 0 5%;
+  }
 }
 
 .product__values {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 th {
-  padding-right: 85px;
-  font-size: 16px;
+  padding-right: 5.3125rem;
+  font-size: 1rem;
   font-weight: normal;
+
+ 
 }
 
 td {
   color: #000;;
  
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
-  
+  @include tablets {
+    padding-right: 3.5625rem;
+    padding-left: 2.25rem;
+  }
 }
 
 .product__order {
-  display: flex;
+  display: flex; 
+
+  @include tablets {
+    justify-content: center;
+  }
 }
 
 .product__price {
   color: #151515;
   font-family: Play;
   font-size: 36px;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
