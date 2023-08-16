@@ -1,20 +1,23 @@
 .dropdown__menu{
+ 
   position: absolute;
   border-radius: 0.25rem;
   background: rgba(255, 255, 255);
   color: #000;
   font-family: Play;
   line-height: 1.5rem;
-  width: 17.0625rem;
+  width: 15.0625rem;
   height: 18.375rem;
-  opacity: 0;
+  margin-left: 84px;
   transition: opacity .4s;
+  opacity: 0;
+ 
 }
 
 .gear__icon:hover {
   .dropdown__menu{
-  
-  opacity: 1;
+    opacity: 1;
+
  }
 }
 
@@ -45,12 +48,12 @@
   
 }
 
-.dropdown__menu:before {
-  content: "";
-  display: block;
-  height: 1.875rem;
-  left: 0;
-  right: 0;
-  top: -1.8125rem;
-  position: absolute;
-}
+// .dropdown__menu:before {
+//   content: "";
+//   display: block;
+//   height: 1.875rem;
+//   left: 0;
+//   right: 0;
+//   top: -1.8125rem;
+//   position: absolute;
+// }

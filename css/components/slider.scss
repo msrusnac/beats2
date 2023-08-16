@@ -21,6 +21,7 @@
 
 
 .product-slider__arow {
+  cursor: pointer;
   @include tablets {
     padding-top: 11.3125rem;
   }
@@ -65,6 +66,11 @@
   height: 100%;
 }
 
+.beats__desc {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product__col-second {
   flex: 1;
   margin-left: 3.6875rem;
@@ -82,8 +88,8 @@
 
 .gear__icon {
     display: inline-block;
-    width: 5.6875rem;
-    height: 5.6875rem;
+    width: 4.6875rem;
+    height: 4.6875rem;
     position: relative;
     background: #9A9A9A;
     border-radius: 6%;
@@ -96,13 +102,15 @@
 }
 
 .gear__image {
-    width: 2.625rem;
-    height: 2.625rem;
+    width: 2.6875rem;
+    height: 2.6875rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 
 .product__image {
   padding-top: 2.6875rem;
