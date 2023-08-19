@@ -21,9 +21,37 @@
 
 
 .product-slider__arow {
+  position: absolute;
+  top: 237px;
   cursor: pointer;
   @include tablets {
-    padding-top: 11.3125rem;
+    top: 189px;
+  }
+}
+
+.product-slider__arow--prev {
+  
+  left: -42px;
+  @include tablets {
+    left: 114px;
+  }
+
+  @include phones {
+    left: 4px;
+  }
+  
+}
+
+.product-slider__arow--next {
+ 
+  right: -24px;
+
+  @include tablets {
+    right: 114px;
+  }
+
+  @include phones {
+    right: 3px;
   }
 }
 
@@ -31,10 +59,6 @@
   
   width: 1.5rem;
   height: 2.5rem;
-  margin-right: 1.75rem;
-
- 
-
  
 }
 
