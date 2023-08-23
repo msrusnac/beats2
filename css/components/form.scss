@@ -114,6 +114,10 @@ margin-bottom: 1.25rem;
   }
 }
 
+.form__input.input-error {
+  border-color: hotpink;
+}
+
 // .form__row-area{
 //   display: flex;
 //   flex-wrap: wrap;
@@ -131,6 +135,7 @@ margin-bottom: 1.25rem;
 
 .form__btns {
   margin-top: 2.5rem;
+  
 
   @include tablets {
     display: flex;

@@ -12,6 +12,13 @@
 .products-slider {
   display: flex;
   align-items: center;
+  position: relative;
+
+  .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
 
   @include tablets {
     align-items: start;
