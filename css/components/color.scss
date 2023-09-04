@@ -1,0 +1,55 @@
+.beats-color-section {
+ background: #fff;
+ position: relative;
+ color: #000;
+}
+
+.color__title {
+  color: #000;
+  position: absolute;
+  top: 115px;
+  left: 84px;
+  text-align: left;
+}
+
+.beats-colors {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.colors__item {
+  display: flex;
+}
+
+.colors__title {
+  position: relative;
+  width: 108px;
+ 
+}
+
+.colors__text {
+  transform: rotate(-90deg);
+}
+
+.colors__content {
+  background:  rgba(51, 53, 55, 0.90);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width .7s;
+}
+
+.content__container {
+  padding: 40px 73px 45px 26px;
+}
+
+.content__close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  border: none;
+  background: transparent;
+}

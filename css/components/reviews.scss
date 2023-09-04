@@ -91,5 +91,9 @@
 
 .reviews__switcher-item {
   justify-content: space-between;
+
+  &.active {
+    border-color: #E01F3D;
+  }
   
 }
