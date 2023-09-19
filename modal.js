@@ -12,7 +12,7 @@ const validateFields = (form, fieldsArray) => {
 }
 
 
-$(".form").submit((e) => {
+$('.form').submit((e) => {
   e.preventDefault();
 
   const form =$(e.currentTarget);
@@ -30,7 +30,7 @@ $(".form").submit((e) => {
 
 
  if(isValid) {
-   $.ajax({
+   const request=$.ajax({
     url: "https://webdev-api.loftschool.com/sendmail",
     method: "post",
     data: {
@@ -64,7 +64,7 @@ $(".form").submit((e) => {
   });
 
 
-$('.app-submit-btn').click(e => {
+$('.app-close-modal').click(e => {
   e.preventDefault();
   $.fancybox.close();
 })

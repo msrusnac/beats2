@@ -1,6 +1,6 @@
 .radio {
   display: flex;
-  cursor: pointer;
+  cursor: pointer !important; 
   user-select: none;
   font-family: Play;
 font-size: 1rem;
